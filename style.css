@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background-color:#1D1E28; 
+    background-image: url(./images/Combined\ Shape\ \(1\).png),url(./images/Group\ 5\ \(4\).png);
+    background-repeat: no-repeat;
+    background-size: 100%,100%;
+    background-position-y:0%,100%;
+    background-position-x:100%,100% ;
+    padding-top: 150px;
+    padding-bottom: 80px;
+}
+.header{
+    font-family:Red Hat text;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 29.11px;
+    letter-spacing: 7.5px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+    
+}
+.first_div{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    
+}
+.container{
+    max-width: 688px; 
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: space-between;
+    
+}
+.times{
+    display: flex;
+    justify-content: space-between;
+}
+.DHMS{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.main{
+    width: 148px;
+    height: 150px;
+    background-image: url(./images/Group\ 2\ \(1\).png);
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    position: relative;
+}
+
+.htag{
+    font-family: Red Hat Text;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18.52px;
+    letter-spacing: 5.918749809265137px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #8385A9;
+}
+.social_medias{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.sm{
+    width: 24px;
+    height: 24px;
+}
+.sm:hover{
+    filter: brightness(0) saturate(100%) invert(55%) sepia(13%) saturate(5910%) hue-rotate(310deg) brightness(98%) contrast(100%);
+}
+
+.mainH{
+    font-family: Red Hat Text;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: -2.4000000953674316px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FB5E84;
+
+}
+.oval{
+    width: 8px;
+    height: 16px;
+    position: absolute;
+    left:0px;
+    top:42%
+}
+.sec_oval{
+    width: 8px;
+    height: 16px;
+    position: absolute;
+    right:0px;
+    top:42%
+}
+@media (max-width:740px) {
+    body{
+        height: 100vh;
+        background-color:#1D1E28; 
+        background-image: url(./images/Combined\ Shape\ \(1\).png),url(./images/Group\ 5\ \(5\).png);
+        background-repeat: no-repeat;
+        background-size: 100%,100%;
+        background-position-y:0%,100%;
+        background-position-x:100%,100% ;
+        padding-top: 150px;
+        padding-bottom: 80px;
+    }
+    .header{
+        font-family: Red Hat Text;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 23.81px;
+        letter-spacing: 6.136363506317139px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        
+    }
+    .htag{
+        font-family: Red Hat Text;
+        font-size: 7px;
+        font-weight: 700;
+        line-height: 9.26px;
+        letter-spacing: 2.9593749046325684px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        
+    }
+    .mainH{
+        font-family: Red Hat Text;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 71px;
+        letter-spacing: -1.0800000429153442px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        
+    }
+    .main{
+        width: 70px;
+        height: 70px;
+        padding-top: 0px;
+        border-radius: 10px;
+    }
+    .times{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
