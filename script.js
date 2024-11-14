@@ -13,6 +13,44 @@ hour.textContent = hours;
 minute.textContent = minutes;
 second.textContent = seconds;
 
+//დღეების გასწორება
+while (isNaN(days)) {
+  days = prompt("გთხოვთ დღის მაჩვენებელში შეიყვანოთ რიცხვი.");
+}
+while (days < 0) {
+  days = prompt("დღის მაჩვენებელი ვერ იქნება 0ზე ნაკლები");
+}
+
+//საათების გასწორება
+while (isNaN(hours)) {
+  hours = prompt("გთხოვთ საათის მაჩვენებელში შეიყვანოთ რიცხვი.");
+}
+while (hours > 24 || hours < 0) {
+  hours = prompt(
+    "გთხოვთ საათი მაჩვენებელში შეიყვანოთ რელევანტური რიცხვი(0-დან 23-ის ჩათვლით)"
+  );
+}
+
+//წუთების გასწორება
+while (isNaN(minutes)) {
+  minutes = prompt("გთხოვთ წუთების მაჩვენებელში შეიყვანოთ რიცხვი.");
+}
+while (minutes > 60 || minutes < 0) {
+  minutes = prompt(
+    "გთხოვთ წუთების მაჩვენებელში შეიყვანოთ რელევანტური რიცხვი(0-დან 59-ის ჩათვლით)"
+  );
+}
+
+//წამების გასწორება
+while (isNaN(seconds)) {
+  seconds = prompt("გთხოვთ წამების მაჩვენებელში შეიყვანოთ რიცხვი.");
+}
+while (seconds > 60 || seconds < 0) {
+  seconds = prompt(
+    "გთხოვთ წამების მაჩვენებელში შეიყვანოთ რელევანტური რიცხვი(0-დან 59-ის ჩათვლით"
+  );
+}
+
 let Interval = setInterval(() => {
   if (seconds > 0) {
     seconds--;
@@ -36,30 +74,3 @@ let Interval = setInterval(() => {
   hour.textContent = hours;
   day.textContent = days;
 }, 1000);
-
-// let MinuteInterval = setInterval(() => {
-//   if (minutes > 0) {
-//     minutes--;
-//     minute.textContent = minutes;
-//   } else {
-//     clearInterval(MinuteInterval);
-//   }
-// }, 60000);
-
-// let HourInterval = setInterval(() => {
-//   if (hours > 0) {
-//     hours--;
-//     hour.textContent = hours;
-//   } else {
-//     clearInterval(HourInterval);
-//   }
-// }, 3600000);
-
-// let DayInterval = setInterval(() => {
-//   if (days > 0) {
-//     days--;
-//     day.textContent = days;
-//   } else {
-//     clearInterval(DayInterval);
-//   }
-// }, 86400000);

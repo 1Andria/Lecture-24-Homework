@@ -96,8 +96,11 @@ body{
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #FB5E84;
+    
 
 }
+
+
 .oval{
     width: 8px;
     height: 16px;
