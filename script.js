@@ -1,7 +1,7 @@
 //დღეები
 let days = parseInt(prompt("შეიყვანეთ დღე"));
 while (isNaN(days) || days < 0) {
-  days = prompt("გთხოვთ დღის მაჩვენებელში შეიყვანოთ რიცხვი.");
+  days = prompt("გთხოვთ დღის მაჩვენებელში შეიყვანოთ რელევანტური რიცხვი.");
 }
 
 //საათები
@@ -12,13 +12,13 @@ while (isNaN(hours) || hours > 24 || hours < 0) {
 //წუთები
 let minutes = parseInt(prompt("შეიყვანეთ წუთი"));
 while (isNaN(minutes) || minutes > 60 || minutes < 0) {
-  minutes = prompt("გთხოვთ წუთების მაჩვენებელში შეიყვანოთ რიცხვი.");
+  minutes = prompt("გთხოვთ წუთების მაჩვენებელში შეიყვანოთ რელევანტური რიცხვი.");
 }
 
 //წამები
 let seconds = parseInt(prompt("შეიყვანეთ წამი"));
 while (isNaN(seconds) || seconds > 60 || seconds < 0) {
-  seconds = prompt("გთხოვთ წამების მაჩვენებელში შეიყვანოთ რიცხვი.");
+  seconds = prompt("გთხოვთ წამების მაჩვენებელში შეიყვანოთ რელევანტური რიცხვი.");
 }
 
 let day = document.getElementById("day");
