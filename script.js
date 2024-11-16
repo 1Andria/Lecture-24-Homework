@@ -1,43 +1,24 @@
 //დღეები
 let days = parseInt(prompt("შეიყვანეთ დღე"));
-while (isNaN(days)) {
+while (isNaN(days) || days < 0) {
   days = prompt("გთხოვთ დღის მაჩვენებელში შეიყვანოთ რიცხვი.");
-}
-while (days < 0) {
-  days = prompt("დღის მაჩვენებელი ვერ იქნება 0ზე ნაკლები");
 }
 
 //საათები
 let hours = parseInt(prompt("შეიყვანეთ საათი"));
-while (isNaN(hours)) {
-  hours = prompt("გთხოვთ საათის მაჩვენებელში შეიყვანოთ რიცხვი.");
+while (isNaN(hours) || hours > 24 || hours < 0) {
+  hours = prompt("გთხოვთ საათის მაჩვენებელში შეიყვანოთ რელევანტური რიცხვი.");
 }
-while (hours > 24 || hours < 0) {
-  hours = prompt(
-    "გთხოვთ საათის მაჩვენებელში შეიყვანოთ რელევანტური რიცხვი(0-დან 23-ის ჩათვლით)"
-  );
-}
-
 //წუთები
 let minutes = parseInt(prompt("შეიყვანეთ წუთი"));
-while (isNaN(minutes)) {
+while (isNaN(minutes) || minutes > 60 || minutes < 0) {
   minutes = prompt("გთხოვთ წუთების მაჩვენებელში შეიყვანოთ რიცხვი.");
-}
-while (minutes > 60 || minutes < 0) {
-  minutes = prompt(
-    "გთხოვთ წუთების მაჩვენებელში შეიყვანოთ რელევანტური რიცხვი(0-დან 59-ის ჩათვლით)"
-  );
 }
 
 //წამები
 let seconds = parseInt(prompt("შეიყვანეთ წამი"));
-while (isNaN(seconds)) {
+while (isNaN(seconds) || seconds > 60 || seconds < 0) {
   seconds = prompt("გთხოვთ წამების მაჩვენებელში შეიყვანოთ რიცხვი.");
-}
-while (seconds > 60 || seconds < 0) {
-  seconds = prompt(
-    "გთხოვთ წამების მაჩვენებელში შეიყვანოთ რელევანტური რიცხვი(0-დან 59-ის ჩათვლით)"
-  );
 }
 
 let day = document.getElementById("day");
